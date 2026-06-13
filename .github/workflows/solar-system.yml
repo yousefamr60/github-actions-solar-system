@@ -18,14 +18,12 @@ jobs:
   unit-testing:
     name: Unit Testing
     runs-on: ubuntu-latest
+    container:        #added
+       image: 'node:20' #added
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup NodeJS Version
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
       - name: Cache NPM dependencies
         uses: actions/cache@v4
         with:
