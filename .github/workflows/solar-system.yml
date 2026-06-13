@@ -7,7 +7,7 @@ on:
       - main
       - 'feature/*'
 permissions:
-  contents: read
+#  contents: read
   packages: write
 env:
   MONGO_URI: 'mongodb+srv://supercluster.d83jj.mongodb.net/superData'
